@@ -7,7 +7,7 @@ import numpy as np
 from scalib import _scalib_ext
 from scalib.config.threading import _get_threadpool
 
-__all__ = ['SASCAGraph']
+__all__ = ["SASCAGraph"]
 
 _NODE_FN = {
     "AND": lambda a, b: a & b,
