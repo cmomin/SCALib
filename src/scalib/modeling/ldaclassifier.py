@@ -656,7 +656,7 @@ class MultiLDASolved:
                 max_workers=get_config().threadpool.n_threads
             ) as executor:
                 self._inner = list(
-                    executor.map(lambda a: LDAClassifierSolved(a, p=p), acc)
+                    executor.map(lambda a: LDAClassifierSolved(a, p=p), acc.ldas)
                 )
 
     def predict_proba(self, traces):
